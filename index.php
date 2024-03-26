@@ -60,7 +60,7 @@
                     </div>
                     <div class="card-body">
                         <h3 class="card-title">Créer un nombre illimité de listes</h3>
-                        <a href="#" class="btn btn-primary">S'incrire</a>
+                        <a href="#" class="btn btn-primary">S'inscrire</a>
                     </div>
                 </div>
             </div>
@@ -71,7 +71,7 @@
                     </div>
                     <div class="card-body">
                         <h3 class="card-title">Classer les listes par catégories</h3>
-                        <a href="#" class="btn btn-primary">S'incrire</a>
+                        <a href="#" class="btn btn-primary">S'inscrire</a>
                     </div>
                 </div>
             </div>
@@ -82,7 +82,7 @@
                     </div>
                     <div class="card-body">
                         <h3 class="card-title">Retrouver facilement vos listes</h3>
-                        <a href="#" class="btn btn-primary">S'incrire</a>
+                        <a href="#" class="btn btn-primary">S'inscrire</a>
                     </div>
                 </div>
             </div>
