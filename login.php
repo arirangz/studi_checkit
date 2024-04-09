@@ -10,10 +10,13 @@
 
         if ($user) {
             // on va le connecter => session
+            $_SESSION['user'] = $user;
+            header('location: index.php');
         } else {
             // afficher une erreur
             $errors[] = "Email ou mot de passe incorrect";
         }
+       
 
     }
 ?>
