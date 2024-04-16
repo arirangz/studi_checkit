@@ -10,11 +10,17 @@ if (isset($_SESSION['user'])) {
 ?>
 
 <div class="container">
-    <h1>Mes listes</h1>
+    <div class="d-flex justify-content-between align-items-center">
+        <h1>Mes listes</h1>
+        <?php if (isUserConnected()) { ?>
+            <a href="ajout-modification-liste.php" class="btn btn-primary">Ajouter une liste</a>
+        <?php } ?>
+    </div>
+
     <div class="row">
 
     
-        <?php if (isset($_SESSION['user'])) { 
+        <?php if (isUserConnected()) { 
             if ($lists) {
                 foreach ($lists as $list) { ?>
                     <div class="col-md-4 my-2">

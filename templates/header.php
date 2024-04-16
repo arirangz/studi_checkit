@@ -31,7 +31,7 @@
             </ul>
 
             <div class="col-md-3 text-end">
-                <?php if (isset($_SESSION['user'])) { ?>
+                <?php if (isUserConnected()) { ?>
                     <a href="logout.php" class="btn btn-outline-primary me-2">Déconnexion</a>
                 <?php } else { ?>
                     <a href="login.php" class="btn btn-outline-primary me-2">Login</a>
