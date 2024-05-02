@@ -73,3 +73,20 @@ function saveListItem(PDO $pdo, string $name, int $listId, bool $status = false,
     return $query->execute();
     
 }
+
+function getListItems(PDO $pdo, int $id):array
+{
+    $query = $pdo->prepare('SELECT * FROM item WHERE list_id = :id');
+    $query->bindValue(':id', $id, PDO::PARAM_INT);
+    $query->execute();
+
+    return $query->fetchAll(PDO::FETCH_ASSOC);
+}
+
+function deleteListItemById(PDO $pdo, int $id):bool
+{
+    $query = $pdo->prepare('DELETE FROM item WHERE id = :id');
+    $query->bindValue(':id', $id, PDO::PARAM_INT);
+    
+    return $query->execute();
+}
